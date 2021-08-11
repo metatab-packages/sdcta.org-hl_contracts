@@ -14,8 +14,8 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2021-08-11T20:04:44
-Modified,2021-08-11T20:04:45
-Giturl,https://github.com/sandiegodata-projects/text-classification.git
+Modified,2021-08-11T20:09:03
+Giturl,https://github.com/metatab-packages/sdcta.org-hl_contracts.git
 ""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
