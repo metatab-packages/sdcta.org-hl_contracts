@@ -1,7 +1,7 @@
 Declare,metatab-latest
-Title,
-Description,
-Identifier,e43e0329-f112-4bfe-9c0e-d5bbcc4c4f16
+Title,San Diego Homelessness Contract Annotations
+Description,Processed TagTog annotations for homelessness contracts collected by the
+Identifier,San Diego County Taxpayers Association.
 Name,sdcta.org-hl_contracts-1.1.1
 Dataset,hl_contracts
 Origin,sdcta.org
@@ -13,18 +13,45 @@ Version,1.1.1
 Version.Major,1
 Version.Minor,1
 Version.Patch,1
+Tag ,text_analysis
+Tag ,homlessness
 Created,2021-08-11T20:04:44
-Modified,2021-08-11T20:09:03
+Modified,2021-08-12T17:12:39
 Giturl,https://github.com/metatab-packages/sdcta.org-hl_contracts.git
-""
+
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
-""
+
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
-""
+
 Section,References,Name,Description,
-""
+Reference,data/homelessness-contracts-20210811.zip,annotations_source,"Zip file downloaded from TagTog with text and annotations, date 2021-08-11",
+
 Section,Resources,Name,Description,
-""
-Section,Schema,DataType,AltName,Description
+Datafile,notebooks/Extract.ipynb#df,annotations,Extracted and processed annotations.,
+Datafile,notebooks/Extract.ipynb#contexts,contexts,"Surrounding paragraphs for the annotations, linked by 'part'",
+
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,annotations,,,,
+Table.Column,classId,string,classid,,
+Table.Column,part,string,,,
+Table.Column,offset_start,integer,,,
+Table.Column,text,text,,,
+Table.Column,coordinates,string,,,
+Table.Column,confidence,string,,,
+Table.Column,confidence_prob,number,,,
+Table.Column,fields,string,,,
+Table.Column,normalizations,string,,,
+Table.Column,who,string,,,
+Table.Column,file_name,string,,,
+Table.Column,html_file_name,string,,,
+Table.Column,coordinates_0_x,number,,,
+Table.Column,coordinates_0_y,number,,,
+Table.Column,coordinates_1_x,number,,,
+Table.Column,coordinates_1_y,number,,,
+Table.Column,value,integer,,,T
+Table.Column,anno_type,string,,,
+Table,contexts,,,,
+Table.Column,part,string,,,
+Table.Column,context,text,,,
